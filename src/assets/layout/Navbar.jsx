@@ -7,11 +7,11 @@ import Home from "../pages/Home";
 import Services from "../pages/Services";
 
 // Icon Imports
-import facebookIcon from '../icons/facebook.svg';
-import instagramIcon from '../icons/instagram.svg';
-import linkedInIcon from '../icons/linkedIn.svg';
-import twitterIcon from '../icons/twitter.svg';
-import blumIcon from '../icons/blum.svg';
+import facebookIcon from "../icons/facebook.svg";
+import instagramIcon from "../icons/instagram.svg";
+import linkedInIcon from "../icons/linkedIn.svg";
+import twitterIcon from "../icons/twitter.svg";
+import blumIcon from "../icons/blum.svg";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -28,10 +28,10 @@ const Navbar = () => {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -40,16 +40,16 @@ const Navbar = () => {
       <header>
         <h1>Events and Weddings</h1>
         <nav className="navbar">
-          {isMobile && 
-            <li className='hamburger' onClick={toggleMenu}>
-              <div className={`hamburger-icon ${isMenuOpen ? 'open' : ''}`}>
+          {isMobile && (
+            <li className="hamburger" onClick={toggleMenu}>
+              <div className={`hamburger-icon ${isMenuOpen ? "open" : ""}`}>
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
             </li>
-          }
-          {!isMobile && 
+          )}
+          {!isMobile && (
             <ul className="mainNav">
               <li>Home</li>
               <li>About</li>
@@ -57,15 +57,15 @@ const Navbar = () => {
               <li>Gallery</li>
               <li>Conatct</li>
             </ul>
-          }
+          )}
         </nav>
       </header>
       <main>
-        <Home/>
-        <AboutUs/>
-        <Services/>
-        <Gallery/>
-        <Contact/>
+        <Home />
+        <AboutUs />
+        <Services />
+        <Gallery />
+        <Contact />
       </main>
       <footer>
         <h2>Events and Weddings</h2>
@@ -84,15 +84,25 @@ const Navbar = () => {
           <p>Sign up with your email to recieve news and updates</p>
         </div>
         <ul className="socialIcons">
-          <li><img src={facebookIcon} alt="" /></li>
-          <li><img src={instagramIcon} alt="" /></li>
-          <li><img src={linkedInIcon} alt="" /></li>
-          <li><img src={twitterIcon} alt="" /></li>
-          <li><img src={blumIcon} alt="" /></li>
+          <li>
+            <img src={facebookIcon} alt="" />
+          </li>
+          <li>
+            <img src={instagramIcon} alt="" />
+          </li>
+          <li>
+            <img src={linkedInIcon} alt="" />
+          </li>
+          <li>
+            <img src={twitterIcon} alt="" />
+          </li>
+          <li>
+            <img src={blumIcon} alt="" />
+          </li>
         </ul>
       </footer>
     </div>
   );
-}
- 
+};
+
 export default Navbar;
