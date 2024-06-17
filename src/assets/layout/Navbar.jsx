@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-import AboutUs from "../pages/Avout";
+import AboutUs from "../pages/About";
 import Contact from "../pages/Contact";
 import Gallery from "../pages/GAllery";
 import Home from "../pages/Home";
