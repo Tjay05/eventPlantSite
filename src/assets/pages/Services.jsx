@@ -1,26 +1,26 @@
-import { Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Image Imports
-import decorPic from '../images/masks.png';
-import birthdayPic from '../images/baloons.png';
-import photographyPic from '../images/photoSet.png';
-import weddingPic from '../images/couple.png';
-import eventPic from '../images/wineglass.png';
-import cateringPic from '../images/burgers.png';
+import decorPic from "../images/masks.png";
+import birthdayPic from "../images/baloons.png";
+import photographyPic from "../images/photoSet.png";
+import weddingPic from "../images/couple.png";
+import eventPic from "../images/wineglass.png";
+import cateringPic from "../images/burgers.png";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { useState } from 'react';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { useState } from "react";
 
 const Services = () => {
   const [swiper, setSwiper] = useState();
 
   const handleSlideChange = (e) => {
     swiper.slideNext();
-  }
+  };
 
   const handlePrevClick = () => {
     if (swiper && swiper.activeIndex > 0) {
@@ -29,13 +29,33 @@ const Services = () => {
   };
 
   const [items, setItems] = useState([
-    { id: 1, image: decorPic, title: 'Event', description: 'decoration' },
-    { id: 2, image: photographyPic, title: 'Event', description: 'photography' },
-    { id: 3, image: cateringPic, title: 'Event', description: 'catering service' },
-    { id: 4, image: eventPic, title: 'Event', description: 'event planner' },
-    { id: 5, image: weddingPic, title: 'Event', description: 'wedding planner' },
-    { id: 6, image: birthdayPic, title: 'Event', description: 'birthday planner' },
-  ])
+    { id: 1, image: decorPic, title: "Event", description: "decoration" },
+    {
+      id: 2,
+      image: photographyPic,
+      title: "Event",
+      description: "photography",
+    },
+    {
+      id: 3,
+      image: cateringPic,
+      title: "Event",
+      description: "catering service",
+    },
+    { id: 4, image: eventPic, title: "Event", description: "event planner" },
+    {
+      id: 5,
+      image: weddingPic,
+      title: "Event",
+      description: "wedding planner",
+    },
+    {
+      id: 6,
+      image: birthdayPic,
+      title: "Event",
+      description: "birthday planner",
+    },
+  ]);
 
   return (
     <>
@@ -66,6 +86,6 @@ const Services = () => {
       </section>
     </>
   );
-}
- 
+};
+
 export default Services;
