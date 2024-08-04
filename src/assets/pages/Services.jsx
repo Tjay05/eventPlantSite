@@ -58,16 +58,14 @@ const Services = () => {
   ]);
 
   return (
-    <>
-      <section>
-        <h2>Our Services</h2>
-        <article>
+    <section id="Services">
+      <h2>Our Services</h2>
+      <article>
+        <div className="container">
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={50}
             slidesPerView={3}
-            navigation
-            pagination={{ clickable: true }}
             onSwiper={(instance) => setSwiper(instance)}
           >
             {items.map((item) => (
@@ -82,9 +80,9 @@ const Services = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </article>
-      </section>
-    </>
+        </div>
+      </article>
+    </section>
   );
 };
 

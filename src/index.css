@@ -235,19 +235,35 @@ main section#About > .container p {
 }
 
 /* Services Styles */
-.item-container {
+main section#Services {
+  margin-block: 3rem;
+} 
+
+main section#Services h2 {
+  text-align: center;
+  font-family: var(--nunitoFont);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+main section#Services article {
+  margin-block: 2rem;
+}
+
+section#Services article > .container .item-container {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.item-container img {
+#Services article > .container .item-container img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.overlay {
+article > .container .item-container .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -257,17 +273,32 @@ main section#About > .container p {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 79.75%);
   color: var(--white);
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.item-container:hover .overlay {
+.item-container .overlay {
+  color: var(--white);
+}
+
+.item-container .overlay h3 {
+  font-style: italic;
+  font-family: var(--alexFont);
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin-block-end: .5rem;
+}
+
+.item-container .overlay p {
+  text-transform: uppercase;
+  font-family: var(--nunitoFont);
+  font-weight: 500;
+  font-size: 0.5rem;
+  margin-block-end: 1rem;
+}
+
+article > .container .item-container:hover .overlay {
   opacity: 1;
-}
-
-.overlay h3, .overlay p {
-  margin: 0;
-  text-align: center;
 }
