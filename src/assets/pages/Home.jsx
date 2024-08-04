@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <>
-      <section>
+      <section id="Home">
         <h1>We Create. You Celebrate</h1>
         <article>
           <h2>Event Planner</h2>

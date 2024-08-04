@@ -35,28 +35,30 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="container">
-      <header>
+    <>
+      <header className="header">
         <h1>Events and Weddings</h1>
         <nav className="navbar">
-          {isMobile && (
-            <li className="hamburger" onClick={toggleMenu}>
-              <div className={`hamburger-icon ${isMenuOpen ? "open" : ""}`}>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </li>
-          )}
-          {!isMobile && (
-            <ul className="mainNav">
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Gallery</li>
-              <li>Conatct</li>
-            </ul>
-          )}
+          <div className="container">
+            {isMobile && (
+              <li className="hamburger" onClick={toggleMenu}>
+                <div className={`hamburger-icon ${isMenuOpen ? "open" : ""}`}>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </li>
+            )}
+            {!isMobile && (
+              <ul className="mainNav">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Gallery</li>
+                <li>Conatct</li>
+              </ul>
+            )}
+          </div>
         </nav>
       </header>
       <main>
@@ -100,7 +102,7 @@ const Navbar = () => {
           </li>
         </ul>
       </footer>
-    </div>
+    </>
   );
 };
 
