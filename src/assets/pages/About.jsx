@@ -1,8 +1,8 @@
 const AboutUs = () => {
   return (
-    <>
-      <section>
-        <h2>about us</h2>
+    <section id="About">
+      <div className="container">
+        <h2>ABOUT US</h2>
         <h3>Events and Weddings</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
@@ -11,8 +11,8 @@ const AboutUs = () => {
           rem quis animi, et delectus dicta,
           laboriosam fugiat ullam.
         </p>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
