@@ -352,3 +352,47 @@ img.gallery-item:nth-child(7) {
   flex: 1 1 50%;
   height: 150px;
 }
+
+/* Contact Styles */
+main section#Contact {
+  margin-block: 3rem;
+  color: var(--black);
+}
+
+main section#Contact > .container h2 {
+  font-family: var(--nunitoFont);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+main section#Contact > .container .contacts-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  margin-block: 1rem;
+}
+
+main section#Contact > .container .contacts-container article.card {
+  border-radius: 5px;
+  padding-inline: .9rem;
+  height: 60px;
+  background: var(--boxBg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .contacts-container article.card h3 {
+  font-family: var(--alexFont);
+  font-style: italic;
+  font-size: 0.72rem;
+  font-weight: 400;
+  margin-block-end: .3rem;
+}
+
+.container .contacts-container article.card p {
+  font-family: var(--nunitoFont);
+  font-size: 0.45rem;
+  font-weight: 500;
+}
