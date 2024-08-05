@@ -396,3 +396,57 @@ main section#Contact > .container .contacts-container article.card {
   font-size: 0.45rem;
   font-weight: 500;
 }
+
+/* Mail Styles */
+main section#Mail {
+  margin-block: 3rem;
+  color: var(--black);
+}
+
+main section#Mail > .container h2 {
+  font-family: var(--nunitoFont);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+main section#Mail > .container .contact-container {
+  width: 100%;
+  margin-block: 1rem;
+}
+
+.container .contact-container form {
+  width: 100%;
+}
+
+.container .contact-container form .top-inputs {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.container .contact-container form input, textarea {
+  margin-block-end: 1rem;
+  border-radius: 5px;
+  border: 1px solid #E1D1BA;
+  padding: 0.5rem;
+  background: var(--boxBg);
+  width: 100%;
+  font-family: var(--nunitoFont);
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+.container .contact-container form .top-inputs input {
+  width: 47%;
+}
+
+.container .contact-container form button {
+  background-color: var(--black);
+  border: none;
+  color: var(--white);
+  font-size: 0.83rem;
+  font-weight: 500;
+  font-family: var(--comoFont);
+  padding: .3rem 1.5rem;
+  margin-block-start: .5rem;
+}
