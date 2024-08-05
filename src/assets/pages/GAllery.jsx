@@ -9,21 +9,21 @@ import chairsPic from '../images/chairs.png';
 
 const Gallery = () => {
   return (
-    <>
-      <section>
+    <section id='Gallery'>
+      <div className="container">
         <h2>Gallery</h2>
         <aside>
-          <img src={couplePic} alt="" />
-          <img src={outingPic} alt="" />
-          <img src={gatheringPic} alt="" />
-          <img src={toastPic} alt="" />
-          <img src={birthdayPic} alt="" />
-          <img src={celebrationPic} alt="" />
-          <img src={chairsPic} alt="" />
+          <img className='gallery-item' src={couplePic} alt="" />
+          <img className='gallery-item' src={outingPic} alt="" />
+          <img className='gallery-item' src={gatheringPic} alt="" />
+          <img className='gallery-item' src={birthdayPic} alt="" />
+          <img className='gallery-item' src={chairsPic} alt="" />
+          <img className='gallery-item' src={celebrationPic} alt="" />
+          <img className='gallery-item' src={toastPic} alt="" />
         </aside>
-      </section>
-    </>
-  );
+      </div>
+    </section>
+  )
 }
  
 export default Gallery;
