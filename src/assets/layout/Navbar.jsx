@@ -69,38 +69,40 @@ const Navbar = () => {
         <Contact />
       </main>
       <footer>
-        <h2>Events and Weddings</h2>
-        <section className="contactUs">
-          <h3>CONATCT US</h3>
-          <p>Any where, Any City, 44533</p>
-          <p>Call Us: +23470000000000</p>
-          <p>info@chochocho.com</p>
-        </section>
-        <div className="newsLetter">
-          <h3>News Letter</h3>
-          <form>
-            <input type="email" />
-            <button>Subscribe</button>
-          </form>
-          <p>Sign up with your email to recieve news and updates</p>
+        <div className="container">
+          <h2>Events and Weddings</h2>
+          <section className="contactUs">
+            <h3>CONTACT US</h3>
+            <p>Any where, Any City, 44533</p>
+            <p>Call Us: +23470000000000</p>
+            <p>info@chochocho.com</p>
+          </section>
+          <div className="newsLetter">
+            <h3>News Letter</h3>
+            <form>
+              <input type="email" placeholder="Email" />
+              <button>Subscribe</button>
+            </form>
+            <p>Sign up with your email to recieve news and updates</p>
+          </div>
+          <ul className="socialIcons">
+            <li>
+              <img src={facebookIcon} alt="" />
+            </li>
+            <li>
+              <img src={instagramIcon} alt="" />
+            </li>
+            <li>
+              <img src={linkedInIcon} alt="" />
+            </li>
+            <li>
+              <img src={twitterIcon} alt="" />
+            </li>
+            <li>
+              <img src={blumIcon} alt="" />
+            </li>
+          </ul>
         </div>
-        <ul className="socialIcons">
-          <li>
-            <img src={facebookIcon} alt="" />
-          </li>
-          <li>
-            <img src={instagramIcon} alt="" />
-          </li>
-          <li>
-            <img src={linkedInIcon} alt="" />
-          </li>
-          <li>
-            <img src={twitterIcon} alt="" />
-          </li>
-          <li>
-            <img src={blumIcon} alt="" />
-          </li>
-        </ul>
       </footer>
     </>
   );
