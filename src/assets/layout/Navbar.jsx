@@ -11,6 +11,7 @@ import instagramIcon from "../icons/instagram.svg";
 import linkedInIcon from "../icons/linkedIn.svg";
 import twitterIcon from "../icons/twitter.svg";
 import blumIcon from "../icons/blum.svg";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -52,11 +53,11 @@ const Navbar = () => {
             <aside className={`${isMobile ? 'active' : ''}`}>
               <nav className={`secondNav ${isMenuOpen ? 'open' : ''}`}>
                 <ul className={`${isMobile ? 'sideNav' : 'mainNav'}`}>
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Services</li>
-                  <li>Gallery</li>
-                  <li>Conatct</li>
+                  <li><NavLink>Home</NavLink></li>
+                  <li><NavLink to='#About'>About</NavLink></li> 
+                  <li><NavLink to='#Services'>Services</NavLink></li>
+                  <li><NavLink to='#Gallery'>Gallery</NavLink></li>
+                  <li><NavLink to='#Contact'>Contact</NavLink></li>
                 </ul>
               </nav>
             </aside>

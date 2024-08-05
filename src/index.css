@@ -94,8 +94,8 @@ header.header h1 {
   border-bottom: 2px solid var(--bgColor);
   text-align: center;
   font-family: var(--alexFont);
-  font-size: 1.4rem;
-  padding-block: .7rem;
+  font-size: 1.6rem;
+  padding-block: .5rem;
   font-weight: 500;
   color: var(--goldBrown);
 }
@@ -103,6 +103,7 @@ header.header h1 {
 header.header nav.navbar {
   background-color: var(--white);
   padding-block: .7rem;
+  font-family: var(--interFont);
 }
 
 /* Hamburger Menu */ 
@@ -156,7 +157,7 @@ aside.active nav.secondNav {
   width: 50%;
   height: 100vh;
   position: fixed;
-  top: 92px;
+  top: 90px;
   left: -100%;
   transition: left 0.4s ease-in-out;
   z-index: 999;
@@ -167,7 +168,7 @@ aside.active nav.secondNav.open {
 }
 
 aside.active nav.secondNav ul {
-  font-family: var(--nunitoFont);
+  font-family: inherit;
   font-weight: 600;
   padding: 0;
   font-size: 0.84rem;
@@ -254,7 +255,7 @@ main section#Home {
 main section#Home h1 {
   font-family: var(--interFont);
   margin-block-start: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -268,20 +269,21 @@ main section#Home article {
 
 section#Home article h2 {
   font-family: var(--alexFont);
-  font-size: 0.6rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--goldBrown);
 }
 
 section#Home article h3 {
-  margin-block: .6rem;
+  margin-block: .4rem;
   font-family: var(--comoFont);
-  font-size: 0.7rem;
+  font-size: 1rem;
+  text-transform: uppercase;
   font-weight: 500;
 }
 
 section#Home article p {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-family: var(--nunitoFont);
 }
 
@@ -289,7 +291,7 @@ section#Home article button {
   background-color: var(--black);
   border: none;
   color: var(--white);
-  font-size: 0.4rem;
+  font-size: 0.6rem;
   font-weight: 500;
   font-family: var(--comoFont);
   padding: .3rem;
@@ -304,7 +306,7 @@ main section#About {
 main section#About > .container h2 {
   text-align: center;
   font-family: var(--nunitoFont);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--black);
 }
@@ -315,14 +317,14 @@ main section#About > .container h3 {
   font-weight: 500;
   text-align: center;
   margin-block: .4rem;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
 }
 
 main section#About > .container p {
   margin-block: .7rem;
   font-family: var(--nunitoFont);
   color: var(--black);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   line-height: 1.3;
 }
 
@@ -334,7 +336,7 @@ main section#Services {
 main section#Services h2 {
   text-align: center;
   font-family: var(--nunitoFont);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--black);
 }
@@ -378,16 +380,17 @@ article > .container .item-container .overlay {
 .item-container .overlay h3 {
   font-family: var(--alexFont);
   font-weight: 400;
-  font-size: 0.7rem;
-  margin-block-end: .5rem;
+  font-size: 1rem;
+  margin-block-end: .2rem;
 }
 
 .item-container .overlay p {
   text-transform: uppercase;
   font-family: var(--nunitoFont);
   font-weight: 500;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   margin-block-end: 1rem;
+  text-align: center;
 }
 
 article > .container .item-container:hover .overlay {
@@ -402,7 +405,7 @@ main section#Gallery {
 main section#Gallery h2 {
   text-align: center;
   font-family: var(--alexFont);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--goldBrown);
 }
@@ -452,7 +455,7 @@ main section#Contact {
 main section#Contact > .container h2 {
   font-family: var(--nunitoFont);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 main section#Contact > .container .contacts-container {
@@ -466,23 +469,25 @@ main section#Contact > .container .contacts-container {
 main section#Contact > .container .contacts-container article.card {
   border-radius: 5px;
   padding-inline: .9rem;
+  flex-wrap: wrap;
   height: 60px;
   background: var(--boxBg);
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 30%;
 }
 
 .container .contacts-container article.card h3 {
   font-family: var(--alexFont);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 400;
   margin-block-end: .3rem;
 }
 
 .container .contacts-container article.card p {
   font-family: var(--nunitoFont);
-  font-size: 0.45rem;
+  font-size: 0.5rem;
   font-weight: 500;
 }
 
@@ -495,7 +500,7 @@ main section#Mail {
 main section#Mail > .container h2 {
   font-family: var(--nunitoFont);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 main section#Mail > .container .contact-container {
@@ -533,7 +538,7 @@ main section#Mail > .container .contact-container {
   background-color: var(--black);
   border: none;
   color: var(--white);
-  font-size: 0.83rem;
+  font-size: 0.9rem;
   font-weight: 500;
   font-family: var(--comoFont);
   padding: .3rem 1.5rem;
@@ -556,7 +561,7 @@ footer h2 {
   color: var(--goldBrown);
   margin-block-end: 2rem;
   text-align: center;
-  font-size: 1.33rem;
+  font-size: 1.6rem;
 }
 
 footer .container section.contactUs {
@@ -578,7 +583,7 @@ footer .container .newsLetter {
 footer .container .newsLetter h3 {
   font-family: var(--comoFont);
   font-weight: 600;
-  font-size: 0.94rem;
+  font-size: 1rem;
   margin-block-end: .5rem;
 }
 
@@ -604,7 +609,7 @@ footer .container .newsLetter form input {
 footer .container .newsLetter form button {
   border: none;
   width: 25%;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-family: inherit;
   border-radius: 5px;
   color: var(--footerBg);
@@ -612,7 +617,7 @@ footer .container .newsLetter form button {
 }
 
 footer .container .newsLetter p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 footer .container ul.socialIcons {
@@ -620,4 +625,356 @@ footer .container ul.socialIcons {
   width: 60%;
   margin-inline: auto;
   justify-content: space-between;
+}
+
+/* Desktop Styles */
+@media(min-width: 768px) {
+  /* Header Styles */
+  header.header {
+    position: unset;
+  }
+
+  header.header h1 {
+    font-size: 2.2rem; /**3rem**/
+    padding-block: 1rem;
+  }
+
+  header.header nav.navbar {
+    background-color: var(--white);
+    padding-block: 1rem;
+    display: flex;
+  }
+
+  /* Nav Styles */
+  aside nav.secondNav ul.mainNav {
+    display: flex;
+    width: 50%;
+    margin-inline: auto;
+    justify-content: space-between;
+    font-size: 1.5rem; /*2.23rem*/
+  }
+  
+  aside nav.secondNav ul.mainNav li a {
+    padding-bottom: 1px;
+    border-bottom: 2px solid transparent;
+    color: var(--linkColor);
+  }
+  
+  /* aside nav.secondNav ul.mainNav li a.active {
+    padding-bottom: 1px;
+    border-bottom: 2px solid var(--activeLink);
+    color: var(--activeLink);
+  } */
+
+  /* Main Styles */
+  main section#Home {
+    height: 78vh;
+    justify-content: center;
+  }
+  
+  main section#Home h1 {
+    margin-block-start: unset;
+    font-size: 4rem;
+  }
+  
+  main section#Home article {
+    margin-block: 1.5rem;
+    padding: 1rem;
+    width: 40%;
+  }
+
+  section#Home article h2 {
+    font-size: 1.6rem;
+  }
+  
+  section#Home article h3 {
+    margin-block: .6rem;
+    font-size: 1.8rem;
+  }
+  
+  section#Home article p {
+    font-size: 1rem;
+  }
+  
+  section#Home article button {
+    font-size: 1rem;
+    padding: .6rem 1rem;
+    margin-block-start: .8rem;
+  }
+
+  /* About Styles */
+  main section#About {
+    margin-block: 5rem;
+  } 
+  
+  main section#About > .container h2 {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+  
+  main section#About > .container h3 {
+    text-align: left;
+    margin-block: .4rem;
+    font-size: 2rem;
+  }
+  
+  main section#About > .container p {
+    font-size: 1.3rem;
+  }
+
+  /* Services Styles */
+  main section#Services {
+    margin-block: 5rem;
+  } 
+
+  main section#Services h2 {
+    font-size: 2.4rem;
+    text-align: left;
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  main section#Services article {
+    margin-block: 2rem 4rem;
+  }
+
+  section#Services article > .container .item-container {
+    width: 80%;
+  }
+
+  .item-container .overlay h3 {
+    font-size: 2rem;
+    margin-block-end: .4rem;
+  }
+  
+  .item-container .overlay p {
+    font-size: 1rem;
+    margin-block-end: 1.5rem;
+  }
+
+  /* Gallery Styles */
+  main section#Gallery {
+    margin-block: 6rem;
+  } 
+  
+  main section#Gallery h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  main section#Gallery > .container aside {
+    gap: 1rem;
+    margin-block: 3rem;
+  }
+
+  main section#Gallery > .container aside img.gallery-item {
+    width: calc(33.333% - 20px);
+    height: 200px;
+  }
+
+  /* Contact Styles */
+  main section#Contact {
+    margin-block: 3rem;
+    color: var(--black);
+  }
+  
+  main section#Contact > .container h2 {
+    font-size: 2.4rem;
+  }
+  
+  main section#Contact > .container .contacts-container {
+    margin-block: 2rem;
+  }
+  
+  main section#Contact > .container .contacts-container article.card {
+    border-radius: 10px;
+    padding: 2rem;
+    height: unset;
+    width: 32%;
+  }
+  
+  .container .contacts-container article.card h3 {
+    font-size: 1.8rem;
+    margin-block-end: .3rem;
+  }
+  
+  .container .contacts-container article.card p {
+    font-size: 1rem;
+  }
+  
+  /* Mail Styles */
+  main section#Mail {
+    margin-block: 4rem;
+  }
+
+  main section#Mail > .container h2 {
+    font-size: 1.7rem;
+  }
+
+  main section#Mail > .container .contact-container {
+    margin-block: 2rem;
+  }
+
+  .container .contact-container form {
+    width: 60%;
+  }
+
+  .container .contact-container form input, textarea {
+    padding: 0.7rem;
+    font-size: .9rem;
+  }
+  
+  .container .contact-container form button {
+    font-size: 1.2rem;
+    padding: .4rem 1.5rem;
+    margin-block-start: .7rem;
+  }
+  
+  /* Footer Styles */
+  footer h2 {
+    font-size: 2.2rem;
+    margin-block-end: 2.5rem;
+  }
+
+  footer .container section.contactUs {
+    font-size: 1.5rem;
+  }
+
+  footer .container .newsLetter {
+    margin-block: 4rem;
+    width: 50%;
+    margin-inline: auto;
+  }
+  
+  footer .container .newsLetter h3 {
+    font-size: 1.6rem;
+  }
+
+  footer .container .newsLetter form input {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+  
+  footer .container .newsLetter form button {
+    font-size: 1rem;
+  }
+  
+  footer .container .newsLetter p {
+    font-size: 1.2rem;
+  }
+
+  footer .container ul.socialIcons {
+    width: 25%;
+    align-items: center;
+    margin-block-start: 5rem;
+  }
+
+  footer .container ul.socialIcons li img {
+    width: 40px;
+  }
+}
+
+/* Larger Desktop Style */
+@media(min-width: 1430px) {
+  /* Header Styes */
+  header.header h1 {
+    font-size: 3rem;
+  }
+
+  /* Nav Styles */
+  aside nav.secondNav ul.mainNav {
+    font-size: 1.8rem; 
+  }
+
+  /* Main Styles */
+  main section#Home h1 {
+    font-size: 4.3rem;
+  }
+  
+  main section#Home article {
+    margin-block: 2rem;
+    padding: 1.3rem;
+  }
+
+  section#Home article h2 {
+    font-size: 1.8rem;
+  }
+  
+  section#Home article h3 {
+    margin-block: .8rem;
+    font-size: 2rem;
+  }
+  
+  section#Home article p {
+    font-size: 1.1rem;
+  }
+  
+  section#Home article button {
+    font-size: 1.4rem;
+    padding: .5rem 1.2rem;
+  }
+
+  /* About Styles */  
+  main section#About > .container h2 {
+    font-size: 3rem;
+  }
+  
+  main section#About > .container h3 {
+    font-size: 2.5rem;
+  }
+  
+  main section#About > .container p {
+    font-size: 1.6rem;
+  }
+
+  /* Services Styles */
+  main section#Services h2 {
+    font-size: 3rem;
+  }
+
+  .item-container .overlay h3 {
+    font-size: 2.5rem;
+    margin-block-end: .4rem;
+  }
+  
+  main section#Gallery h2 {
+    font-size: 3.1rem;
+  }
+
+  /* Contact Styles */
+  main section#Contact > .container h2 {
+    font-size: 3rem;
+  }
+  
+  .container .contacts-container article.card h3 {
+    font-size: 2.5rem;
+    margin-block-end: .3rem;
+  }
+  
+  .container .contacts-container article.card p {
+    font-size: 1.2rem;
+  }
+  
+  /* Mail Styles */
+  main section#Mail > .container h2 {
+    font-size: 2rem;
+  }
+  
+  .container .contact-container form button {
+    font-size: 1.4rem;
+  }
+  
+  /* Footer Styles */
+  footer h2 {
+    font-size: 2.3rem;
+    margin-block-end: 2.5rem;
+  }
+
+  footer .container section.contactUs {
+    font-size: 1.7rem;
+  }
+
+  footer .container ul.socialIcons {
+    margin-block-start: 7rem;
+  }
 }
