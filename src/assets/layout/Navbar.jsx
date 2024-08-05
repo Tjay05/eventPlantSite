@@ -49,15 +49,17 @@ const Navbar = () => {
                 </div>
               </li>
             )}
-            {!isMobile && (
-              <ul className="mainNav">
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Gallery</li>
-                <li>Conatct</li>
-              </ul>
-            )}
+            <aside className={`${isMobile ? 'active' : ''}`}>
+              <nav className={`secondNav ${isMenuOpen ? 'open' : ''}`}>
+                <ul className={`${isMobile ? 'sideNav' : 'mainNav'}`}>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Services</li>
+                  <li>Gallery</li>
+                  <li>Conatct</li>
+                </ul>
+              </nav>
+            </aside>
           </div>
         </nav>
       </header>
