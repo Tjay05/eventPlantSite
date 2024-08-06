@@ -90,7 +90,7 @@ const Navbar = () => {
           </div>
           <ul className="socialIcons">
             <li>
-              <img src={facebookIcon} alt="" />
+              <img src={facebookIcon} alt="Facebook" />
             </li>
             <li>
               <img src={instagramIcon} alt="" />
