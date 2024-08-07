@@ -93,7 +93,7 @@ const Navbar = () => {
               <img src={facebookIcon} alt="Facebook" />
             </li>
             <li>
-              <img src={instagramIcon} alt="" />
+              <img src={instagramIcon} alt="Instagram" />
             </li>
             <li>
               <img src={linkedInIcon} alt="" />
