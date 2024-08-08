@@ -96,7 +96,7 @@ const Navbar = () => {
               <img src={instagramIcon} alt="Instagram" />
             </li>
             <li>
-              <img src={linkedInIcon} alt="" />
+              <img src={linkedInIcon} alt="LinkedIn" />
             </li>
             <li>
               <img src={twitterIcon} alt="" />
