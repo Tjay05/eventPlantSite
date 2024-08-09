@@ -99,7 +99,7 @@ const Navbar = () => {
               <img src={linkedInIcon} alt="LinkedIn" />
             </li>
             <li>
-              <img src={twitterIcon} alt="" />
+              <img src={twitterIcon} alt="Twitter" />
             </li>
             <li>
               <img src={blumIcon} alt="" />
