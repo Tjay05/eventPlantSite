@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <>
       <section id="Home">
-        <h1>We Create. You Celebrate</h1>
+        <h1>We Create, You Celebrate</h1>
         <article>
           <h2>Event Planner</h2>
           <h3>Your personal event planner</h3>
