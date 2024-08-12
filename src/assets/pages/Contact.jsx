@@ -7,7 +7,7 @@ const Contact = () => {
           <div className="contacts-container">
             <article className="card">
               <h3>Address</h3>
-              <p>Anywhere, any city, 44533</p>
+              <p>Anywhere, any city, 443533</p>
             </article>
             <article className="card">
               <h3>Call Us</h3>
