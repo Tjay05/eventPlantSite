@@ -459,8 +459,6 @@ main section#Contact > .container h2 {
 }
 
 main section#Contact > .container .contacts-container {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   text-align: center;
   margin-block: 1rem;
@@ -776,6 +774,11 @@ footer .container ul.socialIcons {
   main section#Contact {
     margin-block: 3rem;
     color: var(--black);
+  }
+
+  main section#Contact > .container .contacts-container {
+    display: flex;
+    justify-content: space-between;
   }
   
   main section#Contact > .container h2 {
