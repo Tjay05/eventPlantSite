@@ -466,7 +466,7 @@ main section#Contact > .container .contacts-container {
 
 main section#Contact > .container .contacts-container article.card {
   border-radius: 5px;
-  padding-inline: .9rem;
+  padding-inline: 0.9rem;
   flex-wrap: wrap;
   height: 60px;
   background: var(--boxBg);
