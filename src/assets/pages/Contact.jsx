@@ -14,7 +14,7 @@ const Contact = () => {
               <p>Call us: +23470000</p>
             </article>
             <article className="card">
-              <h3>Mail Us</h3>
+              <h3>MailUs</h3>
               <p>info@chochocho.com</p>
             </article>
           </div>
