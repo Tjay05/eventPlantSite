@@ -243,7 +243,7 @@ aside.active nav.secondNav ul li img {
 /* Home Styles */
 main section#Home {
   width: 100%;
-  background-image: url(./assets/images/celebration.png);
+  background-image: url('https://res.cloudinary.com/dolfampoa/image/upload/v1725468703/Diamond%20Dreams/IMG-20240904-WA0008_igpif1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--white);
@@ -462,6 +462,9 @@ main section#Contact > .container .contacts-container {
   width: 100%;
   text-align: center;
   margin-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 main section#Contact > .container .contacts-container article.card {

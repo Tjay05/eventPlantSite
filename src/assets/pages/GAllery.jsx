@@ -1,13 +1,13 @@
-// Image Imports
-import couplePic from '../images/couple.png';
-import outingPic from '../images/outing.png';
-import gatheringPic from '../images/gathering.png';
-import toastPic from '../images/toast.png';
-import birthdayPic from '../images/birthday.png';
-import celebrationPic from '../images/celebration.png';
-import chairsPic from '../images/chairs.png';
-
 const Gallery = () => {
+  // Image Imports
+  const toastPic = 'https://res.cloudinary.com/dolfampoa/image/upload/v1725468709/Diamond%20Dreams/IMG-20240904-WA0002_ayv4hx.jpg';
+  const outingPic = 'https://res.cloudinary.com/dolfampoa/image/upload/v1725468710/Diamond%20Dreams/IMG-20240904-WA0001_zr2x64.jpg';
+  const birthdayPic = 'https://res.cloudinary.com/dolfampoa/image/upload/v1725468709/Diamond%20Dreams/IMG-20240904-WA0004_ivfwzz.jpg';
+  const couplePic = 'https://res.cloudinary.com/dolfampoa/image/upload/v1725468709/Diamond%20Dreams/IMG-20240904-WA0003_hxueg5.jpg';
+  const gatheringPic = 'https://res.cloudinary.com/dolfampoa/image/upload/v1725468704/Diamond%20Dreams/IMG-20240904-WA0005_jisbqz.jpg';
+  const celebrationPic = 'https://res.cloudinary.com/dolfampoa/image/upload/v1725468704/Diamond%20Dreams/IMG-20240904-WA0006_asm23d.jpg';
+  const chairsPic = 'https://res.cloudinary.com/dolfampoa/image/upload/v1725468703/Diamond%20Dreams/IMG-20240904-WA0007_klgtyn.jpg';
+
   return (
     <section id='Gallery'>
       <div className="container">
