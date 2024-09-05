@@ -13,7 +13,7 @@ const Gallery = () => {
       <div className="container">
         <h2>Gallery</h2>
         <aside>
-          <img className='gallery-item' src={couplePic} alt="" />
+          <img className='gallery-item' src={couplePic} alt="Gallery pic" />
           <img className='gallery-item' src={outingPic} alt="" />
           <img className='gallery-item' src={gatheringPic} alt="" />
           <img className='gallery-item' src={birthdayPic} alt="" />
