@@ -50,7 +50,7 @@ const Navbar = () => {
             <aside className={`${isMobile ? 'active' : ''}`}>
               <nav className={`secondNav ${isMenuOpen ? 'open' : ''}`}>
                 <ul className={`${isMobile ? 'sideNav' : 'mainNav'}`}>
-                  <li><NavLink onClick={toggleMenu}>Home</NavLink></li>
+                  <li><NavLink onClick={toggleMenu} to='/'>Home</NavLink></li>
                   <li><NavLink onClick={toggleMenu} to='Shop'>Shop</NavLink></li> 
                   <li><NavLink onClick={toggleMenu} to='Contact'>Contact</NavLink></li>
                   <li><NavLink onClick={toggleMenu} to='Academy'>Academy</NavLink></li>
