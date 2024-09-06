@@ -689,6 +689,7 @@ main .container section p.academy {
   padding-inline: 1rem;
   font-size: 0.9rem;
   font-family: var(--nunitoFont);
+  background: transparent;
 }
 
 .form-fields button {
@@ -1038,6 +1039,380 @@ form .popUpRadGroup .flexRad {
   border: none;
   background: var(--lightBlack);
   margin-block-start: 1rem;
+}
+
+/* Admin Login */
+main section.adminLogin {
+  box-shadow: 0px 5px 27px 0px #00000012;
+  padding: 2rem 1rem;
+  margin-block: 3rem;
+  border-radius: 10px;
+}
+
+section.adminLogin form {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--nunitoFont);
+  font-weight: 500;
+}
+
+section.adminLogin form p {
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: var(--nunitoFont);
+  margin-block: 1rem;
+}
+
+section.adminLogin form input {
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  font-family: var(--nunitoFont);
+  margin-block: .3rem 1rem;
+  height: 30px;
+  padding-inline: 1rem;
+  font-size: 0.9rem;
+  background: transparent;
+}
+
+section.adminLogin form label {
+  color: var(--black);
+  font-size: 0.9rem;
+}
+
+section.adminLogin form button {
+  font-weight: 600;
+  font-family: var(--nunitoFont);
+  padding: .4rem 1rem;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 0.8rem;
+  border: none;
+  background: var(--footerBg);
+  margin-block: 1rem;
+}
+
+/* Admin Dashboard */
+section.dashBoardSection {
+  margin-block: 2rem;
+  font-family: var(--nunitoFont);
+}
+
+section.dashBoardSection h2 {
+  text-align: left;
+  margin-block-end: 3rem;
+}
+
+section.dashBoardSection .grid-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+section.dashBoardSection .grid-icons article {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  box-shadow: 0px 5px 27px 0px #00000012;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.grid-icons article img {
+  width: 15%;
+}
+
+.grid-icons article span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.grid-icons article button {
+  align-self: flex-start;
+  display: flex;
+  align-items: center; 
+  font-weight: 600;
+  font-family: var(--nunitoFont);
+  padding: .4rem .8rem;
+  border-radius: 3px;
+  color: white;
+  font-size: 0.7rem;
+  border: none;
+  background: var(--footerBg);
+  margin-block: 1rem;
+}
+
+/* All-Products */
+nav.btmNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 1rem;
+  font-family: var(--nunitoFont);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+nav.btmNav button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-family: var(--comoFont);
+  padding: .4rem .6rem;
+  border-radius: 3px;
+  color: var(--white);
+  font-size: 0.7rem;
+  border: none;
+  background: var(--footerBg);
+  margin-block: 1rem;
+}
+
+nav.btmNav button img {
+  width: 15px;
+}
+
+nav.prodNav {
+  margin-block-end: 2rem;
+}
+
+nav.prodNav ul.topNav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-family: var(--comoFont);
+  font-size: 0.8rem;
+}
+
+nav.prodNav ul.topNav li a.active {
+  color: var(--goldBrown);
+}
+
+/* Pending/Accpeted */
+section.pendenroll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FBFBFB;
+  padding: 1rem;
+  margin-block: 1rem;
+}
+
+section.pendenroll .enrolDetails p {
+  font-family: var(--nunitoFont);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+section.pendenroll .enrolDetails p span {
+  font-weight: 600;
+}
+
+section.pendenroll .delWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.pendenroll .delWrap button {
+  font-weight: 600;
+  font-family: var(--opensans);
+  padding: .5rem .8rem;
+  border-radius: 3px;
+  color: var(--white);
+  font-size: 0.7rem;
+  border: none;
+  background: var(--navbar-bg);
+  margin-block: 1rem;
+  margin-left: auto;
+}
+
+section.pendenroll .delWrap img {
+  width: 35%;
+}
+
+/* Profile */
+.ProfWrapp {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.456);
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ProfWrapp .profileWrap {
+  background-color: #fff;
+  position: relative;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 5px;
+}
+
+.profileWrap .closIcon {
+  align-self: end;
+}
+
+.profileWrap .profCont .firstPicWrap {
+  align-self: center;
+  margin-block: .5rem;
+  width: 50%;
+  height: 100%;
+}
+
+.profileWrap .profCont .firstPicWrap img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 10rem;
+}
+
+.profileWrap .profCont .firstPicWrap .ndPic {
+  position: relative;
+}
+
+.profileWrap .profCont .ndPic .cam {
+  position: absolute;
+  top: -25px;
+  right: -5%;
+}
+
+.profileWrap .profCont .ndPic input[type="file"] {
+  display: none;
+}
+
+.profileWrap .profCont, .profCont form {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--nunitoFont);
+  margin-block: 1rem;
+}
+
+.av__upload {
+  padding: 1rem;
+  box-shadow: 0px 5px 27px 0px #00000012;
+}
+
+.sideNavProf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sideNavProf button {
+  font-weight: 600;
+  font-family: var(--opensans);
+  padding: .4rem .8rem;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 0.5rem;
+  border: none;
+  background: var(--navbar-bg);
+  margin-block: .5rem;
+}
+
+.sideNavProf .urlPic {
+  width: 30%;
+  border-radius: 10%;
+}
+
+.profCont form input {
+  font-family: var(--nunitoFont);
+  margin-block: .5rem;
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+button.logOutBtn {
+  font-weight: 600;
+  font-family: var(--opensans);
+  padding: .4rem .8rem;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 0.7rem;
+  width: 30%;
+
+  border: none;
+  background: var(--navbar-bg);
+  margin-block: .5rem;
+}
+
+/* New Product */
+.NewProd {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewProd h2 {
+  margin-block: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--opensans);
+}
+
+.NewProd form {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewProd form input, select {
+  margin-block-end: 1rem;
+  border: none;
+  padding: .5rem;
+  font-size: 0.9rem;
+  font-family: var(--nunitoFont);
+  border-bottom: 1px solid black;
+}
+
+.NewProd label {
+  align-self: flex-start;
+  font-weight: 600;
+  font-family: var(--opensans);
+  padding: .4rem .8rem;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 0.7rem;
+  border: none;
+  background: var(--navbar-bg);
+  margin-block: 1rem;
+  cursor: pointer;
+}
+
+.NewProd input[type='file'] {
+  display: none;
+}
+
+.NewProd button img {
+  width: 20px;
+}
+
+.NewProd button {
+  align-self: flex-start;
+  font-weight: 600;
+  font-family: var(--opensans);
+  padding: .4rem .8rem;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 0.7rem;
+  border: none;
+  background: var(--navbar-bg);
+  margin-block: 1rem;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.NewProd button.lastBtn {
+  opacity: 0.7;
+  margin-block-start: 4rem;
+  align-self: flex-end;
 }
 
 /* Footer Styles */
@@ -1459,6 +1834,55 @@ footer .container ul.socialIcons {
   .shopPop .ItemInfo button img {
   width: 7%;
   }
+
+  /* CArt Popup */
+  .popup {
+    width: 40%;
+    top: 800px;
+    box-shadow: 0px 5px 27px 800px #00000072;
+  }
+  
+  /* admin Styles */
+  /* Admin Login */
+  main section.adminLogin {
+  width: 50%;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-block: 4rem;
+  }
+  
+  /* Admin Dashboard */
+  section.dashBoardSection h2 {
+  text-align: left;
+  margin-block-end: 3rem;
+  }
+  
+  section.dashBoardSection .grid-icons {
+  grid-template-columns: repeat(4, 1fr);
+  margin-block: 2rem 3rem;
+  gap: 2rem;
+  }
+
+  /* Profile */
+  .ProfWrapp .profileWrap {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-inline: auto;
+  border-radius: 5px;
+  padding-block: 4rem;
+  }
+
+  .NewProd {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 27px 0px #00000012;
+    padding: 2rem;
+    margin-inline: auto;
+    margin-block: 1rem 2rem;
+  }
   
   /* Footer Styles */
   footer h2 {
@@ -1607,4 +2031,24 @@ footer .container ul.socialIcons {
   footer .container ul.socialIcons {
     margin-block-start: 7rem;
   }
+}
+  
+#errorMessage {
+  color: #5A0001;
+}
+  
+.cart-count {
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  margin-top: -10px;
+  margin-left: 30px;
+}
+  
+ /* Our Collection  */
+#delete {
+  margin-top: -50px;
+ width: 50px;
+
 }
