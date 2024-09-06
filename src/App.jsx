@@ -8,6 +8,7 @@ import {
 import Navbar from './assets/layout/Navbar';
 import Contact from './assets/pages/contact/Contact';
 import HomePage from './assets/pages/home/Homepage';
+import PlanWrap from './assets/pages/planning/Planning';
 import ShopWrap from './assets/pages/shop/Shop';
 
 const router = createBrowserRouter(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
         <Route index element={<HomePage/>}/>
         <Route path='Shop' element={<ShopWrap/>} />
         <Route path='Contact' element={<Contact/>} />
+        <Route path='Planning' element={<PlanWrap/>} />
       </Route>
     </Route>
   )

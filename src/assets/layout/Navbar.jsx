@@ -53,9 +53,9 @@ const Navbar = () => {
                   <li><NavLink onClick={toggleMenu}>Home</NavLink></li>
                   <li><NavLink onClick={toggleMenu} to='Shop'>Shop</NavLink></li> 
                   <li><NavLink onClick={toggleMenu} to='Contact'>Contact</NavLink></li>
-                  <li><NavLink onClick={toggleMenu} to='#Gallery'>Acadedmy</NavLink></li>
-                  <li><NavLink onClick={toggleMenu} to='#Contact'>Planning</NavLink></li>
-                  <li><NavLink onClick={toggleMenu} to='#Contact'><img src={cartIcon} alt="" /></NavLink></li>
+                  <li><NavLink onClick={toggleMenu} to='Academy'>Academy</NavLink></li>
+                  <li><NavLink onClick={toggleMenu} to='Planning'>Planning</NavLink></li>
+                  <li><NavLink onClick={toggleMenu} to='Cart'><img src={cartIcon} alt="" /></NavLink></li>
                 </ul>
               </nav>
             </aside>
