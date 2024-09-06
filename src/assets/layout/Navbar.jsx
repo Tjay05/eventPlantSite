@@ -6,10 +6,11 @@ import instagramIcon from "../icons/instagram.svg";
 import linkedInIcon from "../icons/linkedIn.svg";
 import twitterIcon from "../icons/twitter.svg";
 import blumIcon from "../icons/blum.svg";
+import cartIcon from '../icons/light_cart.svg'
 import { NavLink, Outlet } from "react-router-dom";
 
 const Navbar = () => {
-  const brandName = 'Usiju World Event Centre'
+  const brandName = 'Usiju World Event Centre';
   const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -49,11 +50,12 @@ const Navbar = () => {
             <aside className={`${isMobile ? 'active' : ''}`}>
               <nav className={`secondNav ${isMenuOpen ? 'open' : ''}`}>
                 <ul className={`${isMobile ? 'sideNav' : 'mainNav'}`}>
-                  <li><NavLink>Home</NavLink></li>
-                  <li><NavLink to='#About'>About</NavLink></li> 
-                  <li><NavLink to='#Services'>Services</NavLink></li>
-                  <li><NavLink to='#Gallery'>Gallery</NavLink></li>
-                  <li><NavLink to='#Contact'>Contact</NavLink></li>
+                  <li><NavLink onClick={toggleMenu}>Home</NavLink></li>
+                  <li><NavLink onClick={toggleMenu} to='Shop'>Shop</NavLink></li> 
+                  <li><NavLink onClick={toggleMenu} to='#Services'>Contact</NavLink></li>
+                  <li><NavLink onClick={toggleMenu} to='#Gallery'>Acadedmy</NavLink></li>
+                  <li><NavLink onClick={toggleMenu} to='#Contact'>Planning</NavLink></li>
+                  <li><NavLink onClick={toggleMenu} to='#Contact'><img src={cartIcon} alt="" /></NavLink></li>
                 </ul>
               </nav>
             </aside>
