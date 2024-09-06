@@ -1,7 +1,6 @@
 import enrollIcon from '../../icons/enroll.svg';
 import prodIcon from '../../icons/product.svg';
 import cartIcon from '../../icons/darkOutCart.svg';
-// import LikeIcon from '../../icons/Like.svg';
 import plusIcon from '../../icons/lightPlus.svg';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -12,10 +11,8 @@ const Dashboard = () => {
   const [productCount, setProductCount] = useState(0)
   const [shopCount, setShopCount] = useState(0)
   
-
   const tosinToken = localStorage.getItem("token");
   const token = JSON.parse(tosinToken);
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -75,7 +72,7 @@ const Dashboard = () => {
             </Link>
           </article>
           <article>
-            <Link to='../Pending' onClick={()=>window.alert('Enable Desktop Site to get the complete view')}>
+            <Link to='../Pending'>
               <img src={enrollIcon} alt="Enrol" />
               <p>Total Enrolment</p>
               <span>{enrollmentCount}</span>
@@ -83,7 +80,7 @@ const Dashboard = () => {
             </Link>
           </article>
           <article>
-            <Link to='../Pending-orders' onClick={()=>window.alert('Enable Desktop Site to get the complete view')}>
+            <Link to='../Pending-orders'>
               <img src={cartIcon} alt="Orders" />
               <p>Total Orders</p>
               <span>{ shopCount}</span>
