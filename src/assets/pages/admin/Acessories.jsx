@@ -1,12 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import del from '../../assets/icons/material-symbols-light_delete-outline.svg'
-
-
-// Collection Images
-import veil from '../../assets/images/veil1.jpeg';
 const AccessoryCollection = () => {
   const tosinToken = localStorage.getItem("token");
   const token = JSON.parse(tosinToken);

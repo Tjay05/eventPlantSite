@@ -48,9 +48,6 @@ const ProductWrapper = () => {
             <NavLink to='Gowns'>Gowns <span>({ gownsCount})</span></NavLink>
           </li>
           <li>
-            <NavLink to='Accessory'>Accessories <span>({accessoriesCount })</span></NavLink>
-          </li>
-          <li>
             <NavLink to='Bouquet'>Bouquets <span>({bouqetCount})</span></NavLink>
           </li>
           <li>

@@ -1091,9 +1091,13 @@ section.adminLogin form button {
   margin-block: 1rem;
 }
 
+/* Admin Spacer */
+.ADspacer {
+  margin-block: 2rem;
+}
+
 /* Admin Dashboard */
 section.dashBoardSection {
-  margin-block: 2rem;
   font-family: var(--nunitoFont);
 }
 

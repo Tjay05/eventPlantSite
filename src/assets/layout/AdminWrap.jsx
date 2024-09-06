@@ -35,7 +35,7 @@ const AdminWrapper = () => {
     <header className="header">
       <h1>{brandName}</h1>
     </header>
-    <main className="container">
+    <main className="container ADspacer">
       <Outlet/>
     </main>
     <footer>

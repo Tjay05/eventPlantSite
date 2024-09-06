@@ -1,11 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-// Collection Images
-import del from '../../assets/icons/material-symbols-light_delete-outline.svg'
-
-import bouquet from '../../assets/images/bouquet1.jpeg';
 
 const BouquetCollection = () => {
   const tosinToken = localStorage.getItem("token");
@@ -51,7 +46,6 @@ const BouquetCollection = () => {
       console.error('Error submitting form data:', error);
     }
   }; 
-
 
   useEffect(() => {
     if (fetchedProducts.length > 0) {

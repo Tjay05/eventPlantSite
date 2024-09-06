@@ -2,11 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-// Collection Images
-import gown from '../../assets/images/gown.jpeg';
-import del from '../../assets/icons/material-symbols-light_delete-outline.svg'
-
-
 
 const MagazineCollection = () => {
   const tosinToken = localStorage.getItem("token");
@@ -53,9 +48,6 @@ const MagazineCollection = () => {
       console.error('Error submitting form data:', error);
     }
   }; 
-
-
-
 
   useEffect(() => {
     if (fetchedProducts.length > 0) {
@@ -105,7 +97,5 @@ const MagazineCollection = () => {
     </>
   );
 };
-
-
  
 export default MagazineCollection;
