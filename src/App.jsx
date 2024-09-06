@@ -6,6 +6,7 @@ import {
   RouterProvider
 } from 'react-router-dom';
 import Navbar from './assets/layout/Navbar';
+import AcademyWrap from './assets/pages/academy/Academy';
 import Contact from './assets/pages/contact/Contact';
 import HomePage from './assets/pages/home/Homepage';
 import PlanWrap from './assets/pages/planning/Planning';
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
         <Route path='Shop' element={<ShopWrap/>} />
         <Route path='Contact' element={<Contact/>} />
         <Route path='Planning' element={<PlanWrap/>} />
+        <Route path='Academy' element={<AcademyWrap/>} />
       </Route>
     </Route>
   )
