@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
-import del from '../../assets/icons/material-symbols-light_delete-outline.svg'
-
-
+import del from '../../icons/material-symbols-light_delete-outline.svg'
 
 const PendingOrders = () => {
-
   const [order, setOrder] = useState([]);
   const tosinToken = localStorage.getItem("token");
   const token = JSON.parse(tosinToken);
@@ -39,6 +36,7 @@ const PendingOrders = () => {
       console.error('Error submitting form data:', error);
     }
   };
+
   const deleteData = async (id) => {
     try {
       console.log(id)
@@ -59,9 +57,6 @@ const PendingOrders = () => {
       console.error('Error submitting form data:', error);
     }
   }; 
-
-
-
 
   useEffect(() => {
     const fetchData = async () => {

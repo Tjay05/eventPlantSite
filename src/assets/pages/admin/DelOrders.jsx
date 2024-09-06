@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import del from '../../assets/icons/material-symbols-light_delete-outline.svg'
+import del from '../../icons/material-symbols-light_delete-outline.svg'
 
 const DeliveredOrders = () => {
   const [order, setOrder] = useState([]);
