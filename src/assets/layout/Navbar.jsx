@@ -52,7 +52,7 @@ const Navbar = () => {
                 <ul className={`${isMobile ? 'sideNav' : 'mainNav'}`}>
                   <li><NavLink onClick={toggleMenu}>Home</NavLink></li>
                   <li><NavLink onClick={toggleMenu} to='Shop'>Shop</NavLink></li> 
-                  <li><NavLink onClick={toggleMenu} to='#Services'>Contact</NavLink></li>
+                  <li><NavLink onClick={toggleMenu} to='Contact'>Contact</NavLink></li>
                   <li><NavLink onClick={toggleMenu} to='#Gallery'>Acadedmy</NavLink></li>
                   <li><NavLink onClick={toggleMenu} to='#Contact'>Planning</NavLink></li>
                   <li><NavLink onClick={toggleMenu} to='#Contact'><img src={cartIcon} alt="" /></NavLink></li>
