@@ -1,9 +1,4 @@
 import { useEffect, useState } from "react";
-import AboutUs from "../pages/About";
-import Contact from "../pages/Contact";
-import Gallery from "../pages/GAllery";
-import Home from "../pages/Home";
-import Services from "../pages/Services";
 
 // Icon Imports
 import facebookIcon from "../icons/facebook.svg";
@@ -11,9 +6,10 @@ import instagramIcon from "../icons/instagram.svg";
 import linkedInIcon from "../icons/linkedIn.svg";
 import twitterIcon from "../icons/twitter.svg";
 import blumIcon from "../icons/blum.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Navbar = () => {
+  const brandName = 'Usiju World Event Centre'
   const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -38,7 +34,7 @@ const Navbar = () => {
   return (
     <>
       <header className="header">
-        <h1>Events and Weddings</h1>
+        <h1>{brandName}</h1>
         <nav className="navbar">
           <div className="container">
             {isMobile && (
@@ -65,15 +61,11 @@ const Navbar = () => {
         </nav>
       </header>
       <main>
-        <Home />
-        <AboutUs />
-        <Services />
-        <Gallery />
-        <Contact />
+        <Outlet/>
       </main>
       <footer>
         <div className="container">
-          <h2>Events and Weddings</h2>
+          <h2>{brandName}</h2>
           <section className="contactUs">
             <h3>CONTACT US</h3>
             <p>Any where, Any City, 44533</p>
