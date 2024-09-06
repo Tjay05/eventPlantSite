@@ -1070,8 +1070,24 @@ footer .container section.contactUs h3 {
   margin-block-end: .5rem;
 }
 
+footer .container .footAdmin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline:  auto;
+  margin-block: 2rem;
+}
+
+footer .container .footAdmin a {
+  border-radius: 20px;
+  padding: 0.6rem;
+  background-color: var(--goldBrown);
+  cursor: pointer;
+  font-family: var(--nunitoFont);
+}
+
 footer .container .newsLetter {
-  margin-block: 6rem 12rem;
+  margin-block: 6rem;
   font-family: var(--nunitoFont);
 }
 
