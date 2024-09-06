@@ -84,8 +84,8 @@ img {
 /* Mobile Styles */
 /* Navbar Styles */
 header.header {
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   width: 100%;
 }
 
@@ -395,6 +395,46 @@ article > .container .item-container .overlay {
 
 article > .container .item-container:hover .overlay {
   opacity: 1;
+}
+
+/* Collections Styles */
+main section.OurColLect {
+  margin-block: 3rem;
+} 
+
+main section.OurColLect h2 {
+  text-align: center;
+  font-family: var(--nunitoFont);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+main section .collectionSwiper {
+  position: relative;
+  text-align: center;
+  margin-block: 1.5rem;
+}
+
+main section .collectionSwiper img {
+  height: 250px;
+  width: 180px;
+  border-radius: 10px;
+}
+
+main section .collectionSwiper p {
+  font-family: var(--nunitoFont);
+  font-weight: 600;
+  margin-block-start: .5rem;
+  font-size: .9rem;
+}
+
+main section .collectionSwiper button {
+  border: none;
+  background: transparent;
+  color: var(--navbar-bg);
+  width: unset;
+  top: 43%;
 }
 
 /* Gallery Styles */
@@ -751,6 +791,31 @@ footer .container ul.socialIcons {
   .item-container .overlay p {
     font-size: 1rem;
     margin-block-end: 1.5rem;
+  }
+
+  /* Collection Styles */
+  main section.OurColLect {
+    margin-block: 5rem;
+  } 
+
+  main section.OurColLect h2 {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  main section .collectionSwiper {
+    margin-block: 4rem;
+    width: 60%;
+    margin-inline: auto;
+  }
+
+  main section .collectionSwiper img {
+    width: 280px;
+    height: 350px;
+  }
+
+  main section .collectionSwiper p {
+    font-size: 1.1rem;
   }
 
   /* Gallery Styles */
