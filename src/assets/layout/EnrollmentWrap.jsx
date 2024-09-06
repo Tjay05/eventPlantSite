@@ -1,7 +1,6 @@
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
-import back from '../assets/icons/back-arrow.svg'
+import back from '../icons/back-arrow.svg'
 import { useEffect, useState } from "react";
-
 
 const EnrollWrapper = () => {
   const history = useNavigate();

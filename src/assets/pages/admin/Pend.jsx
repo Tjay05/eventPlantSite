@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import del from '../../assets/icons/material-symbols-light_delete-outline.svg'
+import del from '../../icons/material-symbols-light_delete-outline.svg'
 
 const PendingEnrolls = () => {
   const [enrollments, setEnrollments] = useState([]);

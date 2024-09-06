@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import del from '../../assets/icons/material-symbols-light_delete-outline.svg'
-
-
+import del from '../../icons/material-symbols-light_delete-outline.svg'
 
 const AcceptedEnroll = () => {
   const [enrollments, setEnrollments] = useState([]);
@@ -27,7 +25,6 @@ const AcceptedEnroll = () => {
       console.error('Error submitting form data:', error);
     }
   }; 
-
 
   useEffect(() => {
     const fetchData = async () => {
