@@ -606,6 +606,33 @@ main section#Mail > .container .contact-container {
   margin-block-start: .5rem;
 }
 
+/* Planning Styles */
+main .container section h2 {
+  text-align: center;
+  font-family: var(--comoFont);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-block: 1rem;
+}
+
+main .container section ul {
+  list-style: unset;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-inline: 1rem;
+  font-family: var(--nunitoFont);
+}
+
+main .container section ul li {
+  margin-block: .5rem 1rem;
+}
+
+main .container section ul p {
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
 /* Shop Styles*/
 main #Shop {
   margin-block: 1rem 2rem;
@@ -1042,6 +1069,21 @@ footer .container ul.socialIcons {
     font-size: 1.2rem;
     padding: .4rem 1.5rem;
     margin-block-start: .7rem;
+  }
+
+  /* Planning Styles */
+  main .container section h2 {
+    font-size: 2rem;
+    margin-block-start: 2rem;
+  }
+  
+  main .container section ul {
+    font-size: 1.5rem;
+  }
+  
+  main .container section ul p {
+    font-size: 1rem;
+    line-height: 1.2;
   }
 
   /* Shop Styles*/
