@@ -154,7 +154,7 @@ li.hamburger .hamburger-icon.open span:nth-child(3) {
 /* Nav Styles */
 aside.active nav.secondNav {
   background: hsl(0, 18%, 95%);
-  width: 50%;
+  width: 100%;
   height: 100vh;
   position: fixed;
   top: 90px;
@@ -236,8 +236,20 @@ aside.active nav.secondNav.open ul li:nth-child(5) {
   transition-delay: 0.6s;
 } 
 
+aside.active nav.secondNav ul li:nth-child(6) {
+  transition-delay: .6s;
+}
+
+aside.active nav.secondNav.open ul li:nth-child(6) {
+  transition-delay: 0.7s;
+} 
+
 aside.active nav.secondNav ul li img {
-  width: 12%; 
+  width: 100%; 
+}
+
+aside.active nav.secondNav ul li a.active {
+  /* color: var(--activeLink); */
 }
 
 /* Home Styles */
@@ -488,7 +500,7 @@ img.gallery-item:nth-child(7) {
 
 /* Contact Styles */
 main section#Contact {
-  margin-block: 3rem;
+  margin-block: 1rem;
   color: var(--black);
 }
 
@@ -496,6 +508,14 @@ main section#Contact > .container h2 {
   font-family: var(--nunitoFont);
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+main section#Contact > .container p.contactInfo {
+  margin-block: .7rem;
+  font-family: var(--nunitoFont);
+  color: var(--black);
+  font-size: 0.75rem;
+  line-height: 1.3;
 }
 
 main section#Contact > .container .contacts-container {
@@ -584,6 +604,125 @@ main section#Mail > .container .contact-container {
   font-family: var(--comoFont);
   padding: .3rem 1.5rem;
   margin-block-start: .5rem;
+}
+
+/* Shop Styles*/
+main #Shop {
+  margin-block: 1rem 2rem;
+}
+
+main #Shop section h2 {
+  text-align: center;
+  font-family: var(--nunitoFont);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-block: .8rem;
+  color: var(--black);
+}
+
+main #Shop section p {
+  margin-block: .7rem;
+  font-family: var(--nunitoFont);
+  font-size: 0.8rem;
+  color: black;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+/* Shop Popup Styles */
+.selectedItem .shopPop {
+  display: flex;
+  z-index: 500;
+  box-shadow: 0px 5px 27px 100px #00000012;
+  border-radius: 20px;
+  background-color: var(--white);
+  text-align: left;
+  height: 55vh;
+}
+
+.selectedItem .shopPop .shopItem {
+  background-image: url(./assets/images/gown.jpeg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 45%;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.selectedItem .ItemInfo p {
+  margin: unset;
+}
+
+.selectedItem .shopPop .ItemInfo {
+  position: relative;
+  width: 45%;
+  margin-inline: auto;
+  font-family: var(--nunitoFont);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-block: 1rem;
+}
+
+.shopPop .ItemInfo img.closIc {
+  position: absolute;
+  top: -105px;
+  right: 0;
+  width: 15%;
+}
+
+.shopPop .ItemInfo h2 {
+  font-size: .8rem;
+  margin: unset;
+}
+
+.shopPop .ItemInfo .buyRent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: .4rem 1rem;
+  font-size: 0.8rem;
+  margin-block: .5rem;
+}
+
+.shopPop .ItemInfo .itemPrice {
+  margin: unset;
+}
+
+.shopPop .ItemInfo .itemQuant .itemAddSub {
+  display: flex;
+  gap: 0.5rem;
+  margin-block-end: .5rem;
+  width: 10%;
+}
+
+.shopPop .ItemInfo .itemQuant .itemAddSub img {
+  height: unset;
+}
+
+.shopPop .ItemInfo button {
+  width: 100%;
+  font-weight: 600;
+  font-family: var(--alexFont);
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: var(--white);
+  font-size: .8rem;
+  border: none;
+  background: var(--navbar-bg);
+  margin-block-start: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.shopPop .ItemInfo button img {
+  width: 14%;
+  height: unset;
 }
 
 /* Footer Styles */
@@ -852,6 +991,10 @@ footer .container ul.socialIcons {
   main section#Contact > .container h2 {
     font-size: 2.4rem;
   }
+
+  main section#Contact > .container p.contactInfo {
+    font-size: 1.2rem;
+  }
   
   main section#Contact > .container .contacts-container {
     margin-block: 2rem;
@@ -899,6 +1042,46 @@ footer .container ul.socialIcons {
     font-size: 1.2rem;
     padding: .4rem 1.5rem;
     margin-block-start: .7rem;
+  }
+
+  /* Shop Styles*/
+  main #Shop {
+    margin-block: 2rem;
+  }
+  
+  main #Shop section h2 {
+    font-size: 2.3rem;
+  }
+  
+  main #Shop section p {
+    font-size: 1.2rem;
+  }
+  
+  /* Cart Styles */
+  main .cartAllContain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shopPop .ItemInfo img.closIc {
+    top: -95px;
+    right: -25px;
+    width: 10%;
+}
+  
+  .shopPop .ItemInfo .buyRent {
+  width: 40%;
+  font-size: .6rem;
+  }
+  
+  .shopPop .ItemInfo button {
+  width: 100%;
+  font-size: 1rem;
+  gap: 0.5rem;
+  }
+  
+  .shopPop .ItemInfo button img {
+  width: 7%;
   }
   
   /* Footer Styles */
