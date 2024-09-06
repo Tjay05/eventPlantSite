@@ -82,7 +82,7 @@ const Contact = () => {
         <div className="container">
           <h2>MAIL US</h2>
           <div className="contact-container">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="top-inputs">
                 <input
                   type="text"
@@ -115,7 +115,9 @@ const Contact = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
-              <button onClick={handleSubmit}>Send</button>
+              <button disabled={sending}>
+                {sending ? "Sending..." : "Send"}
+              </button>
             </form>
           </div>
         </div>
