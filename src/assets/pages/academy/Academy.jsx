@@ -95,7 +95,7 @@ const AcademyWrap = () => {
       <section>
         <h2>What is it About?</h2>
         <p className='academy'>
-          At Usuji World Academy, we're dedicated to nurturing passion, fostering expertise, and providing a gateway to a fulfilling career or hobby within the dynamic world of weddings. Our academy stands as a comprehensive platform offering diverse educational opportunities, insights, and resources tailored to the ever-evolving landscape of the wedding industry.
+          At Usiju World Academy, we're dedicated to nurturing passion, fostering expertise, and providing a gateway to a fulfilling career or hobby within the dynamic world of weddings. Our academy stands as a comprehensive platform offering diverse educational opportunities, insights, and resources tailored to the ever-evolving landscape of the wedding industry.
         </p>
       </section>
       <section className="academySec">
