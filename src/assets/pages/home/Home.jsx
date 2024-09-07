@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
+  const history = useNavigate();
+
   return (
     <>
       <section id="Home">
@@ -9,7 +13,7 @@ const Home = () => {
           <p>
             We believe that it is all about the BIG DREAMS and the small details!
           </p>
-          <button>Book Now</button>
+          <button onClick={() => history('Contact')}>Book Now</button>
         </article>
       </section>
     </>
