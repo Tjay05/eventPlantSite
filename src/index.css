@@ -524,14 +524,13 @@ main section#Contact > .container .contacts-container {
   margin-block: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 
 main section#Contact > .container .contacts-container article.card {
   border-radius: 5px;
-  padding-inline: 0.9rem;
-  flex-wrap: wrap;
-  height: 60px;
+  padding-inline: 0.6rem;
+  padding-block: 1rem;
   background: var(--boxBg);
   display: flex;
   justify-content: center;
@@ -550,6 +549,8 @@ main section#Contact > .container .contacts-container article.card {
   font-family: var(--nunitoFont);
   font-size: 0.5rem;
   font-weight: 500;
+  word-wrap: break-word;
+  width: 100%;
 }
 
 /* Mail Styles */
@@ -571,6 +572,16 @@ main section#Mail > .container .contact-container {
 
 .container .contact-container form {
   width: 100%;
+}
+
+.container .contact-container .ctaImg {
+  width: 100%;
+  margin-block: 2rem;
+  background-image: url('https://res.cloudinary.com/dolfampoa/image/upload/v1725468666/Diamond%20Dreams/IMG-20240904-WA0012_p6jsvh.jpg');
+  height: 200px;
+  background-position: 50% 50%;
+  border-radius: 20px;
+  background-size: cover;
 }
 
 .container .contact-container form .top-inputs {
@@ -1742,10 +1753,19 @@ footer .container ul.socialIcons {
 
   main section#Mail > .container .contact-container {
     margin-block: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .container .contact-container form {
     width: 60%;
+  }
+
+  .container .contact-container .ctaImg {
+    width: 35%;
+    height: 230px;
+    margin: unset;
   }
 
   .container .contact-container form input, textarea {
