@@ -11,6 +11,10 @@ import ProfilePage from '../pages/admin/Profile';
 
 const AdminWrapper = () => {
   const brandName = 'Usiju World Event Centre';
+  const brandAddress = 'Besides Lamonde Hotel, State Secretariat Junction Apollo Crescent, Plot 731 GRA Jos, Plateau State';
+  const brandEmail = 'usijuworldltd39@gmail.com';
+  const brandPhoneNumber = '07030362200, 07045550002';
+  
   const [isMobile, setIsMobile] = useState(false);
   const [showPorofile, setProfile] = useState(false);
   const location = useLocation();
@@ -43,13 +47,13 @@ const AdminWrapper = () => {
         <h2>{brandName}</h2>
         <section className="contactUs">
           <h3>CONTACT US</h3>
-          <p>Any where, Any City, 44533</p>
-          <p>Call Us: +23470000000000</p>
-          <p>info@chochocho.com</p>
+            <p>{brandAddress}</p>
+            <p>Call Us: {brandPhoneNumber}</p>
+            <p>{brandEmail}</p>
         </section>
-        <div className="footAdmin">
-          <Link to='Admin'>Admin</Link>
-        </div>
+        {/* <div className="footAdmin">
+          <Link to='/Admin'>Admin</Link>
+        </div> */}
         <div className="newsLetter">
           <h3>News Letter</h3>
           <form>
