@@ -2,6 +2,10 @@ import { useState } from "react";
 
 const Contact = () => {
   const brandName = 'Usuji World Event Centre';
+  const brandAddress = 'Besides Lamonde Hotel, State Secretariat Junction Apollo Crescent, Plot 731 GRA Jos, Plateau State';
+  const brandEmail = 'usijuworldltd39@gmail.com';
+  const brandPhoneNumber = '07030362200, 07045550002';
+
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
@@ -65,15 +69,15 @@ const Contact = () => {
           <div className="contacts-container">
             <article className="card">
               <h3>Address</h3>
-              <p>Anywhere, any city, 443533</p>
+              <p>{brandAddress}</p>
             </article>
             <article className="card">
               <h3>Call Us</h3>
-              <p>Call Us: +2347000000</p>
+              <p>Call Us: {brandPhoneNumber}</p>
             </article>
             <article className="card">
               <h3>Mail Us</h3>
-              <p>info@chochocho.com</p>
+              <p>{brandEmail}</p>
             </article>
           </div>
         </div>
@@ -119,6 +123,7 @@ const Contact = () => {
                 {sending ? "Sending..." : "Send"}
               </button>
             </form>
+            <div className="ctaImg"></div>
           </div>
         </div>
       </section>
