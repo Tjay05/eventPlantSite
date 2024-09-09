@@ -3,7 +3,7 @@ import instagramIcon from "../icons/instagram.svg";
 import linkedInIcon from "../icons/linkedIn.svg";
 import twitterIcon from "../icons/twitter.svg";
 import blumIcon from "../icons/blum.svg";
-import profIcon from '../icons/profile.svg';
+// import profIcon from '../icons/profile.svg';
 
 import { useState, useEffect } from 'react';
 import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
