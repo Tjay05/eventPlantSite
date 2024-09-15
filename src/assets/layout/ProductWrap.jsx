@@ -51,7 +51,7 @@ const ProductWrapper = () => {
             <NavLink to='Bouquet'>Bouquets <span>({ bouqetCount })</span></NavLink>
           </li>
           <li>
-            <NavLink to='Magazine'>Magazines <span>({magazineCount})</span></NavLink>
+            <NavLink to='Magazine'>Magazines <span>({ magazineCount })</span></NavLink>
           </li>
         </ul>
       </nav>
