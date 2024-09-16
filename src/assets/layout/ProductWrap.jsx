@@ -8,7 +8,7 @@ const ProductWrapper = () => {
   const location = useLocation();
   const tosinToken = localStorage.getItem("token");
   const token = JSON.parse(tosinToken);
-  const [products , setProducts] = useState([])
+  const [products, setProducts] = useState([])
 
   useEffect(() => {
     const fetchProducts = async () => {
