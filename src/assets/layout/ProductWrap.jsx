@@ -40,7 +40,7 @@ const ProductWrapper = () => {
       <img src={back} alt="Back" onClick={()=> history('Dashboard')} />
       <nav className="btmNav">
         <h1>All products</h1>
-        <button onClick={()=> history('New-product')}><img src={plusIcon} alt="Plus" /> New product</button>
+        <button onClick={()=> history('New-product')}><img src={plusIcon} alt="Plus" /> New product </button>
       </nav>
       <nav className="prodNav">
         <ul className="topNav rule">
