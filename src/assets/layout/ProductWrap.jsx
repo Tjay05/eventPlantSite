@@ -2,7 +2,8 @@ import {
   NavLink, 
   Outlet, 
   useLocation, 
-  useNavigate } from "react-router-dom";
+  useNavigate 
+} from "react-router-dom";
 import back from '../icons/back-arrow.svg'
 import plusIcon from '../icons/lightPlus.svg'
 import { useEffect, useState } from "react";
