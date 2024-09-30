@@ -7,7 +7,7 @@ import linkedInIcon from "../icons/linkedIn.svg";
 import twitterIcon from "../icons/twitter.svg";
 import blumIcon from "../icons/blum.svg";
 import cartIcon from '../icons/light_cart.svg'
-import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 const Navbar = () => {
   const brandName = 'Usiju World Event Centre';
