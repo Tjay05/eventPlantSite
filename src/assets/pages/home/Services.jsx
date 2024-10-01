@@ -18,10 +18,6 @@ import { useState } from "react";
 const Services = () => {
   const [swiper, setSwiper] = useState();
 
-  const handleSlideChange = (e) => {
-    swiper.slideNext();
-  };
-
   const handlePrevClick = () => {
     if (swiper && swiper.activeIndex > 0) {
       swiper.slidePrev();
