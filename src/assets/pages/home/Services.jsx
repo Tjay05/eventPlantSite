@@ -18,12 +18,6 @@ import { useState } from "react";
 const Services = () => {
   const [swiper, setSwiper] = useState();
 
-  const handlePrevClick = () => {
-    if (swiper && swiper.activeIndex > 0) {
-      swiper.slidePrev();
-    }
-  };
-
   const [items, setItems] = useState([
     { id: 1, image: decorPic, title: "Event", description: "decoration" },
     {
