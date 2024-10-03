@@ -24,13 +24,13 @@ const Services = () => {
       id: 2,
       image: photographyPic,
       title: "Event",
-      description: "photography",
+      description: "Photography",
     },
     {
       id: 3,
       image: cateringPic,
       title: "Event",
-      description: "catering service",
+      description: "Catering service",
     },
     { id: 4, image: eventPic, title: "Event", description: "event planner" },
     {
