@@ -19,7 +19,8 @@ const Services = () => {
   const [swiper, setSwiper] = useState();
 
   const [items, setItems] = useState([
-    { id: 1, image: decorPic, title: "Event", description: "decoration" },
+    { 
+      id: 1, image: decorPic, title: "Event", description: "decoration" },
     {
       id: 2,
       image: photographyPic,
