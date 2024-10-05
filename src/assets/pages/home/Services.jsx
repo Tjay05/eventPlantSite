@@ -20,7 +20,8 @@ const Services = () => {
 
   const [items, setItems] = useState([
     { 
-      id: 1, image: decorPic, title: "Event", description: "decoration" },
+      id: 1, 
+      image: decorPic, title: "Event", description: "decoration" },
     {
       id: 2,
       image: photographyPic,
