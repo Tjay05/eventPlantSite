@@ -22,7 +22,8 @@ const Services = () => {
     { 
       id: 1, 
       image: decorPic, 
-      title: "Event", description: "decoration" },
+      title: "Event", 
+      description: "decoration" },
     {
       id: 2,
       image: photographyPic,
